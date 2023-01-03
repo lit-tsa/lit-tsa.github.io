@@ -1,0 +1,61 @@
+div#in-up-buttons a{
+    color: inherit;
+    text-decoration: none;
+    margin-right: 20%;
+}
+
+
+
+input.user-and-pass {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    border-top-color: black;
+    border-left-color: black;
+    border-right-color: black;
+   
+    width: 70%;
+    height: 3.5rem;
+
+    font-size: medium;
+    text-indent: 4rem;
+
+    padding-left: 2%;
+}
+
+#user {
+    background-image: url("../sign-in-and-up/images/name/name1-30px.jpg");
+    background-repeat: no-repeat;
+    background-position: 2rem 0.8rem;
+}
+
+#pass {
+    background-image: url("../sign-in-and-up/images/password/password2-30px.jpg");
+    background-repeat: no-repeat;
+    background-position: 2rem 0.8rem;
+}
+
+input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+input[type="checkbox"] + label {
+    font-size: 1.5rem;
+    padding-left: .5%;
+}
+
+input[type="submit"] {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+   
+    width: 50%;
+    height: 3.5rem;
+
+    margin-left: auto;
+    margin-right: auto;
+}
