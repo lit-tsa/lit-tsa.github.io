@@ -1,4 +1,6 @@
-img#company-logo {
+
+/* sign-in-and-up/sign-in.html styles*/
+.container__company-logo {
     display: block;
     margin-top: 5%;
     margin-bottom: 10%;
@@ -6,3 +8,5 @@ img#company-logo {
     margin-left: auto;
     margin-right: auto;
 }
+/* end of sign-in-and-up/sign-in.html styles*/
+

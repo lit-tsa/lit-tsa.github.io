@@ -1,61 +1,49 @@
-div#in-up-buttons a{
-    color: inherit;
-    text-decoration: none;
-    margin-right: 20%;
+/* Generic styles */
+.container__form-ui {
+    display: block;
+    width: 40%;
+    height: 3.5rem;
+
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+/* end of generic form styles */
 
 
 
-input.user-and-pass {
+/* sign-in-and-up/sign-in.html styles*/
+.container__form-ui--input {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 
-    border-top-color: black;
-    border-left-color: black;
-    border-right-color: black;
-   
-    width: 70%;
-    height: 3.5rem;
-
-    font-size: medium;
-    text-indent: 4rem;
-
-    padding-left: 2%;
+    text-indent: 3rem;
 }
 
-#user {
+.container__form-ui--username {
     background-image: url("../sign-in-and-up/images/name/name1-30px.jpg");
     background-repeat: no-repeat;
-    background-position: 2rem 0.8rem;
+    background-position: 1rem 0.55rem;
 }
 
-#pass {
+.container__form-ui--password {
     background-image: url("../sign-in-and-up/images/password/password2-30px.jpg");
     background-repeat: no-repeat;
-    background-position: 2rem 0.8rem;
+    background-position: 1rem 0.55rem;
 }
 
-input[type="checkbox"] {
+.container__form-ui__check {
     width: 1.2rem;
     height: 1.2rem;
 }
 
-input[type="checkbox"] + label {
+.container__form-ui--submit {
+    text-indent: 0rem; /* overides the text indent above */
+    text-align: center;
     font-size: 1.5rem;
-    padding-left: .5%;
+    font-weight: 700;
 }
-
-input[type="submit"] {
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-   
-    width: 50%;
-    height: 3.5rem;
-
-    margin-left: auto;
-    margin-right: auto;
-}
+/* end of sign-in-and-up/sign-in.html styles*/

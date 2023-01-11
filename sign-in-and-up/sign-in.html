@@ -9,80 +9,64 @@
     <link rel="stylesheet" type="text/css" href="../styles/typography.css" />
     <link rel="stylesheet" type="text/css" href="../styles/layout.css" />
     <link rel="stylesheet" type="text/css" href="../styles/form.css" />
-    <link rel="stylesheet" type="text/css" href="../styles/Image.css" />
-
+    <link rel="stylesheet" type="text/css" href="../styles/Image.css" />      
     <title>pic-share-sign-in-page.</title>
   </head>
   <body>
-     <img 
-     srcset="../images/company/company-logo2-450px.jpg 1.5x,
-     ../images/company/company-logo2-600px.jpg 2x,
-     ../images/company/company-logo2-1200px.jpg 4x"
-     
-     src="../images/company/company-logo2-300px.jpg" alt="company logo" id="company-logo" />
+    <div class="container">
 
-    <div id="container">
-
-      <div id="in-up-buttons">
-        <!-- current page -->
-        <span>SIGN IN</span>
-
-        <!-- link to sign-up page -->
-        <a href="sign-up/index.html">
-          <span>SIGN UP</span>
-        </a>
-      </div>
-
+      <!-- company logo -->
+      <img 
+      srcset="../images/company/company-logo2-450px.jpg 1.5x,
+      ../images/company/company-logo2-600px.jpg 2x,
+      ../images/company/company-logo2-1200px.jpg 4x"
+      
+      src="../images/company/company-logo2-300px.jpg" alt="company logo" 
+      class="container__company-logo" />
+ 
       <form action="" method="">
+
         <!-- username input control -->
-        <div>
-
-            <input class="user-and-pass" id="user"
-              type="text"
-              name="username"
-              placeholder="USERNAME"
-              required
-            />
-
-        </div>
+        <input class="container__form-ui container__form-ui--input container__form-ui--username"
+        type="text"
+        name="username"
+        placeholder="USERNAME"
+        required
+       />
 
         <!-- password input control -->
-        <div>
-
-            <input class="user-and-pass" id="pass"
-              type="password"
-              name="password"
-              placeholder="PASSWORD"
-              required
-            />
-        
-        </div>
+        <input class="container__form-ui container__form-ui--input container__form-ui--password"
+        type="password"
+        name="password"
+        placeholder="PASSWORD"
+        required
+     />
 
         <!-- remember me checkbox -->
-        <div>
+        <div class="container__form-ui">
           <input
-            type="checkbox"
-            name="remember-me"
-            value="remember-me"
-            checked
-            id="rem-me"
+          type="checkbox"
+          name="remember-me"
+          value="remember-me"
+          checked
+          class="container__form-ui__check"
+          id="rem-me"
           />
-          <label for="rem-me">Remember-me</label>
+
+           <label for="rem-me" class="container__form-ui__">Remember-me</label>
         </div>
 
         <!-- submit button -->
-        <div>
-          <input type="submit" value="SIGN-IN" />
-        </div>
+        <input type="submit" value="SIGN-IN" 
+        class="container__form-ui container__form-ui--input container__form-ui--submit" />
+        <!-- end of form -->
+ 
       </form>
-      <!-- end of form -->
 
+      
       <!-- forgot your password link -->
-      <div>
-        <a href="#" id="f-passwd">
-          <span>FORGOT PASSWORD ?</span>
-        </a>
-      </div>
+      <a href="#" class="container__link container__link--fpassword">FORGOT PASSWORD ?</a>
+
     </div>
   </body>
 </html>

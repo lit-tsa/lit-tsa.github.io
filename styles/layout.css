@@ -1,46 +1,28 @@
+/* Geneic styles(applies to all pages) */
 html {
-    background-color: white;
+    box-sizing: border-box;
 }
-body {
-    width: 75vw;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    
-    /* centres body the viewport */
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+.container {
+    width: 70vw;
+    margin-top: 0%;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(0, 0, 0);
+    background-color: black;
+    background-image: linear-gradient(to top,black 85%,white);
+
+    /* border-style:solid;
+    border-color: black; */
 }
 
-#container {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* end of generic styles */
 
-body div {
-    margin-top: 10%;
-    margin-top: 10%;
-    margin-top: 10%;
-    margin-top: 10%;
+/* sign-in-and-up/sign-in.html styles*/
 
-    padding-left: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-right: 2%;
-}
-
-#in-up-buttons span {
-    border-bottom-style:solid;
-    border-bottom-color: white;
-
-    padding-left: 2px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 2px; 
-
-    text-transform: uppercase;
-    font-size: 1.5em;
-
-    margin-left: 20%;
-}
+/* end of sign-in-and-up/sign-in.html styles*/

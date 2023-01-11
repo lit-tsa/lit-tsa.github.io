@@ -1,7 +1,54 @@
-a#f-passwd {
-    width:40rem;
-    color: aliceblue;
+/* genereic link styles */
+.container__link {
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.container__link:link {
+    text-decoration: underline;
+    text-underline-position: below;
+    color: rgb(148, 170, 219);
+    
+}
+
+.container__link:visited {
+    text-decoration: none;
+    color: rgba(36, 97, 121, 0.274);
+}
+
+.container__link:hover {
+    text-decoration: none;
+    background-color: beige;
+}
+
+.container__link:focus {
+    text-decoration: none;
+    background-color: beige;
+    border-style: solid;
+    border-color: rgba(8, 206, 140, 0.24);
+}
+
+.container__link:active {
+    text-decoration: none;
+    background-color:rgba(66, 156, 172, 0.815);
+    border-bottom-style: solid;
+    border-bottom-color: rgba(8, 206, 140, 0.24);
+}
+/* end of generic link styles */
+
+
+
+
+/* sign-in-and-up/sign-in.html styles*/
+.container__link--fpassword {
+    display: block;
+    width:40%;
 
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10%;
+
+    font-size: 1.5rem;
+    font-weight: 700;
 }
+/* end of sign-in-and-up/sign-in.html styles*/
