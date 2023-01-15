@@ -1,13 +1,11 @@
 /* Generic styles */
 .container__form-ui {
     display: block;
-    width: 40%;
-    height: 3.5rem;
-
+    height: 2.5rem;
     margin-bottom: 10%;
-    margin-left: auto;
+    width: 80%;
     margin-right: auto;
-
+    margin-left: auto;
 }
 /* end of generic form styles */
 
@@ -26,18 +24,19 @@
 .container__form-ui--username {
     background-image: url("../sign-in-and-up/images/name/name1-30px.jpg");
     background-repeat: no-repeat;
-    background-position: 1rem 0.55rem;
+    background-position: 0.5rem 0.2rem;
 }
 
 .container__form-ui--password {
     background-image: url("../sign-in-and-up/images/password/password2-30px.jpg");
     background-repeat: no-repeat;
-    background-position: 1rem 0.55rem;
+    background-position: 0.5rem 0.2rem;
 }
 
 .container__form-ui__check {
     width: 1.2rem;
     height: 1.2rem;
+    margin-right: 5%;
 }
 
 .container__form-ui--submit {
@@ -45,5 +44,6 @@
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
+    width: 40%;
 }
 /* end of sign-in-and-up/sign-in.html styles*/

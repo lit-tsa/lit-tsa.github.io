@@ -10,15 +10,10 @@ html {
 }
 
 .container {
-    width: 70vw;
     margin-top: 0%;
-    margin-left: auto;
-    margin-right: auto;
     background-color: black;
     background-image: linear-gradient(to top,black 85%,white);
-
-    /* border-style:solid;
-    border-color: black; */
+    min-width: 250px;
 }
 
 /* end of generic styles */
