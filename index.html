@@ -1,73 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-</head>
-<body>
-    <!-- <a href="sign-in-and-up/sign-in.html">pic-share-sign-up-homepage</a> -->
 
-    <div>
-        <header>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/typography.css" />
+  </head>
+  <body>
+    <!-- <a href="sign-in-and-up/sign-in.html">pic-share-sign-up-homepage</a> -->
+    <div class="container">
+      <header>
+        <nav class="container__main-nav">
+          <div class="container__main-nav__c-logo-and-home">
             <!-- company logo -->
-            <img src="images/icons/company-logo.svg" alt="company-logo">
+            <img
+              src="images/icons/company-logo-white.svg"
+              alt="company-logo"
+              class="container__main-nav__c-logo"
+            />
 
             <!-- home icon -->
-            <img src="images/icons/home_FILL0_wght400_GRAD0_opsz48.svg" alt="home-icon">
+            <a href="#" class="container__main-nav__home-icon">
+              <img src="images/icons/home-white.svg" alt="home-icon" />
+            </a>
+          </div>
 
-            <!-- search icon -->
-            <img src="images/icons/search_FILL0_wght400_GRAD0_opsz48.svg" alt="search-icon">
+          <!-- search icon -->
+          <a href="#" class="container__main-nav__search-icon">
+            <img src="images/icons/search-icon-white.svg" alt="search-icon" />
+          </a>
 
-            <!-- notification icon -->
-            <img src="images/icons/bell-light.svg" alt="notification-icon">
+          <!-- notification icon -->
+          <a href="#" class="container__main-nav__notific-icon">
+            <img
+              src="images/icons/bell-icon-white.svg"
+              alt="notification-icon"
+            />
+          </a>
 
-            <!-- menu icon -->
-            <img src="images/icons/menu.svg" alt="menu-icon">
+          <!-- menu icon -->
+          <a href="#" class="container__main-nav__menu-icon">
+            <img src="images/icons/more-icon-white.svg" alt="menu-icon" />
+          </a>
+        </nav>
+      </header>
+      <!-- end of main nav -->
 
-        </header>
+      <div class="container__wrapper">
         
-        <div class="people">
-            <img src="images/people/2207739861ea299f3124f070b1f47883.jpg" alt="">
-            <img src="images/people/4168bcde9d71da542815b10e4b31d7c0.jpg" alt="">
-            <img src="images/people/582b62647f590a2cdf7253cdcae36913.jpg" alt="">
-            <img src="images/people/c4c48fa702321ea7699f09ec8daf4fa6.jpg" alt="">
-            <img src="images/people/c90b2e68e45d6cdb8a5ae4c3056f7a3d.jpg" alt="">
-        </div>
+        <h1 class="container__main-content__heading">Recently played</h1>
 
-        <div class="movies">
-            <img src="images/movies/04a8c0b19e5b31491c3c2b483a410331.jpg" alt="">
-            <img src="images/movies/04fae2d6c58fe5f0c4b7deeff21473cc.jpg" alt="">
-            <img src="images/movies/0e993d07dff8f4ee2e023f02ecf1da5c.jpg" alt="">
-            <img src="images/movies/0ef138de62492bb2869e3d0e48c482a3.jpg" alt="">
-            <img src="images/movies/36b2fe7cae9cf31dded398b9f3934942.jpg" alt="">
-        </div>
+        <div class="container__main-content">
+          <figure>
+            <img
+              src="images/people/2207739861ea299f3124f070b1f47883.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
 
-        <div class="skycrappers">
-            <img src="images/skycrappers/2e4d09667b4130b32a247a54df7fa16e.jpg" alt="">
-            <img src="images/skycrappers/3b1795ad223dca2edfe97275b4747bc1.jpg" alt="">
-            <img src="images/skycrappers/3f93bda08b2ac761691ac347d3a175d1.jpg" alt="">
-            <img src="images/skycrappers/7de0e5bf3d6ae6de842a869ca0fb821a.jpg" alt="">
-            <img src="images/skycrappers/9a1648745cf0858e49074e0bb2f71720.jpg" alt="">
-        </div>
+            <figcaption class="container__main-content__description">
+              A short description of the playlist or song
+            </figcaption>
+          </figure>
 
-        <div class="space">
-            <img src="images/space/007a3cd4c0f3b87755d0d9cb2945fa70.jpg" alt="">
-            <img src="images/space/295ceab742d9cfa68a49eba48b3f1dff.jpg" alt="">
-            <img src="images/space/4290a9110a5e76032daf65d4eb5f9793.jpg" alt="">
-            <img src="images/space/4715519175739fd37901266736db3c53.jpg" alt="">
-            <img src="images/space/57a7ecdba67ee6d9d41a1dddf797303c.jpg" alt="">
-        </div>
+          <figure>
+            <img
+              src="images/people/4168bcde9d71da542815b10e4b31d7c0.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
 
-        <div class="super-car">
-            <img src="images/super-cars/45f8464bef4b43ad50343085377605d0.jpg" alt="">
-            <img src="images/super-cars/76e17586623517979f605fbee28261f7.jpg" alt="">
-            <img src="images/super-cars/906b3018b2826b7e6abcd5c95ea09840.jpg" alt="">
-            <img src="images/super-cars/9e0b9c18afbd5a3f29ced2965a6e51ed.jpg" alt="">
-            <img src="images/super-cars/e4510f0afe5ba3652b6221a252290046.jpg" alt="">
-        </div>
+            <figcaption class="container__main-content__description">
+              A short description of the playlist or song
+            </figcaption>
+          </figure>
 
-    </div>
-</body>
+          <figure>
+            <img
+              src="images/people/582b62647f590a2cdf7253cdcae36913.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+
+            <figcaption class="container__main-content__description">
+              A short description of the playlist or song
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/people/c4c48fa702321ea7699f09ec8daf4fa6.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+
+            <figcaption class="container__main-content__description">
+              A short description of the playlist or song
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/people/c90b2e68e45d6cdb8a5ae4c3056f7a3d.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+
+            <figcaption class="container__main-content__description">
+              A short description of the playlist or song
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      
+      <div class="container__wrapper container__wrapper--rest">
+        
+        <h1 class="container__main-content__heading">Try something else</h1>
+
+        <div class="container__main-content">
+          <figure>
+            <img
+              src="images/movies/04a8c0b19e5b31491c3c2b483a410331.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/movies/04fae2d6c58fe5f0c4b7deeff21473cc.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/movies/0e993d07dff8f4ee2e023f02ecf1da5c.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/movies/0ef138de62492bb2869e3d0e48c482a3.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/movies/36b2fe7cae9cf31dded398b9f3934942.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        </div>
+        <!-- end of container__main-content -->
+
+      </div><!-- end of container__wrapper -->
+
+      <div class="container__wrapper container__wrapper--rest">
+
+        <h1 class="container__main-content__heading">Made for Da Da</h1>
+
+        <div class="container__main-content">
+          <figure>
+            <img
+              src="images/skycrappers/2e4d09667b4130b32a247a54df7fa16e.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/skycrappers/3b1795ad223dca2edfe97275b4747bc1.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/skycrappers/3f93bda08b2ac761691ac347d3a175d1.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/skycrappers/7de0e5bf3d6ae6de842a869ca0fb821a.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/skycrappers/9a1648745cf0858e49074e0bb2f71720.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        </div> <!--end of container__main-content -->
+
+      </div>
+
+      <div class="container__wrapper container__wrapper--rest">
+
+        <h1 class="container__main-content__heading">Today's biggest hits</h1>
+
+        <div class="container__main-content">
+         
+        
+          <figure>
+            <img
+              src="images/space/007a3cd4c0f3b87755d0d9cb2945fa70.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/space/295ceab742d9cfa68a49eba48b3f1dff.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/space/4290a9110a5e76032daf65d4eb5f9793.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/space/4715519175739fd37901266736db3c53.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/space/57a7ecdba67ee6d9d41a1dddf797303c.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        </div> <!-- end of container__main-content -->
+
+      </div>
+
+      <div class="container__wrapper container__wrapper--rest">
+
+        <h1 class="container__main-content__heading">Sing-along</h1>
+
+        <div class="container__main-content">
+         
+        
+          <figure>
+            <img
+              src="images/super-cars/45f8464bef4b43ad50343085377605d0.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/super-cars/76e17586623517979f605fbee28261f7.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/super-cars/906b3018b2826b7e6abcd5c95ea09840.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/super-cars/9e0b9c18afbd5a3f29ced2965a6e51ed.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+        
+          <figure>
+            <img
+              src="images/super-cars/e4510f0afe5ba3652b6221a252290046.jpg"
+              alt=""
+              width="120"
+              height="120"
+            />
+        
+            <figcaption class="container__main-content__description">A short description of the playlist or song</figcaption>
+          </figure>
+
+        </div><!--end of container__main-content -->
+
+      </div><!--  end of container__wrapper -->
+
+    </div> <!-- end of container -->
+  </body>
 </html>

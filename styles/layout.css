@@ -1,19 +1,24 @@
+/* normalize styles */
+figure {
+  margin: 0px;
+}
+
+/* normalize styles */
+
 /* Geneic styles(applies to all pages) */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
-    box-sizing: inherit;
+*::before {
+  box-sizing: inherit;
 }
 
 .container {
-    margin-top: 0%;
-    background-color: black;
-    background-image: linear-gradient(to top,black 85%,white);
-    min-width: 250px;
+  background-color: black;
+  min-width: 250px;
 }
 
 /* end of generic styles */
@@ -21,3 +26,102 @@ html {
 /* sign-in-and-up/sign-in.html styles*/
 
 /* end of sign-in-and-up/sign-in.html styles*/
+
+/* index.html styles*/
+
+/* main nav styles */
+.container__main-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  height: 50px;
+  width: 100%;
+
+  background-color: black;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.container__main-nav__c-logo-and-home {
+  margin-right: auto;
+  display: flex;
+
+  align-items: center;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto; /*size this item based on its content */
+}
+
+.container__main-nav__home-icon {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.container__main-nav__c-logo {
+  margin-right: 5px;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.container__main-nav__menu-icon {
+  margin-right: 5%;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.container__main-nav__notific-icon {
+  margin-right: 5%;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.container__main-nav__search-icon {
+  margin-right: 5%;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+/* main nav styles */
+
+/* homepage main-content */
+
+.container__wrapper {
+  margin-top: 3.2rem;
+  margin-left: 0.625rem;
+}
+
+.container__wrapper--rest {
+  margin-top: 1.25rem;
+}
+
+.container__main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,130px);
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  gap: 0.625rem;
+  }
+
+
+
+.container__main-content__description {
+  margin-top: 0.3125rem;
+  max-width: 7.5rem;
+}
+
+/* end of homepage main-content */
+
+/* index.html styles*/
