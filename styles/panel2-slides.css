@@ -1,0 +1,9 @@
+/* display only the active div */
+.container__panel2__slide.active {
+  display: block;
+}
+
+/* hide all other divs */
+.container__panel2__slide {
+  display: none;
+}

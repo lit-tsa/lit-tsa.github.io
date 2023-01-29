@@ -5,69 +5,228 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />      
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../styles/link.css" />
     <link rel="stylesheet" type="text/css" href="../styles/typography.css" />
     <link rel="stylesheet" type="text/css" href="../styles/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/tabbed-panel.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/panel2-slides.css" />
     <link rel="stylesheet" type="text/css" href="../styles/form.css" />
-    <link rel="stylesheet" type="text/css" href="../styles/Image.css" />      
-    <title>pic-share-sign-in-page.</title>
+    <link rel="stylesheet" type="text/css" href="../styles/Image.css" />
+
+    <script src="../Js/tabbed-panel.mjs" defer></script>
+    <script src="../Js/panel2-slideShow.mjs" defer></script>
+    <title>pic-share-sign-in-and-up-page.</title>
   </head>
+
   <body>
     <div class="container">
-
       <!-- company logo -->
-      <img 
-      srcset="../images/company/company-logo2-450px.jpg 1.5x,
-      ../images/company/company-logo2-600px.jpg 2x,
-      ../images/company/company-logo2-1200px.jpg 4x"
-      
-      src="../images/company/company-logo2-300px.jpg" alt="company logo" 
-      class="container__company-logo" />
- 
-      <form action="" method="">
+      <img
+        src="../images/company-logo/company-logo-white.svg"
+        alt="company logo"
+        class="container__company-logo"
+      />
 
+      <!-- nav tabs -->
+      <div class="container__main-tabs">
+        <span class="container__main-tabs__tab active">
+          <a href="#panel1">SIGN IN</a>
+        </span>
+        <span class="container__main-tabs__tab">
+          <a href="#panel2">SIGN UP</a>
+        </span>
+        <!-- write css for this link -->
+      </div>
+
+      <!-- start of sign in page -->
+      <div class="container__panel active" id="panel1">
         <!-- username input control -->
-        <input class="container__form-ui container__form-ui--input container__form-ui--username"
-        type="text"
-        name="username"
-        placeholder="USERNAME"
-        required
-       />
+        <input
+          class="container__form-ui container__form-ui--input container__form-ui--username"
+          type="text"
+          name="username"
+          placeholder="USERNAME"
+          required
+        />
 
         <!-- password input control -->
-        <input class="container__form-ui container__form-ui--input container__form-ui--password"
-        type="password"
-        name="password"
-        placeholder="PASSWORD"
-        required
-     />
+        <input
+          class="container__form-ui container__form-ui--input container__form-ui--password"
+          type="password"
+          name="password"
+          placeholder="PASSWORD"
+          required
+        />
 
         <!-- remember me checkbox -->
-        <div class="container__form-ui">
+        <div class="container__form-ui container__form-ui--chechdiv">
           <input
-          type="checkbox"
-          name="remember-me"
-          value="remember-me"
-          checked
-          class="container__form-ui__check"
-          id="rem-me"
+            type="checkbox"
+            name="remember-me"
+            value="remember-me"
+            checked
+            class="container__form-ui__check"
+            id="rem-me"
           />
 
-           <label for="rem-me" class="container__form-ui__">Remember-me</label>
+          <label for="rem-me">Remember-me</label>
         </div>
 
         <!-- submit button -->
-        <input type="submit" value="SIGN-IN" 
-        class="container__form-ui container__form-ui--input container__form-ui--submit" />
-        <!-- end of form -->
- 
-      </form>
+        <input
+          type="submit"
+          value="SIGN-IN"
+          class="container__form-ui container__form-ui--input container__form-ui--submit"
+        />
 
-      
-      <!-- forgot your password link -->
-      <a href="#" class="container__link container__link--fpassword">FORGOT PASSWORD ?</a>
+        <!-- forgot your password link -->
+        <a href="#" class="container__link container__link--fpassword"
+          >FORGOT PASSWORD ?</a
+        >
+      </div>
+      <!-- end of sign in panel -->
 
+      <!-- start of sign up panel -->
+      <div class="container__panel" id="panel2">
+        <!-- email page -->
+        <div class="container__panel2__slide active">
+          <input
+            type="email"
+            name="email-address"
+            class="container__form-ui container__form-ui--input container__form-ui--email"
+            placeholder="EMAIL"
+            required
+          />
+
+          <!-- names and password page -->
+          <button class="container__form-ui__button--next">NEXT</button>
+
+          <!-- use existing social networks(fb,twitter,google) accounts. -->
+          <span class="container__text">Or sign up with :</span>
+
+          <ul class="container__socials">
+            <li class="container__socials--fb">
+              <img src="images/social/fb/fb1-50px.jpg" alt="facebook logo" />
+            </li>
+
+            <li class="container__socials--insta">
+              <img
+                src="images/social/insta/insta1-50px.jpg"
+                alt="instagram logo"
+              />
+            </li>
+
+            <li class="container__socials--tweeter">
+              <img
+                src="images/social/twitter/twitter-logo-50px.jpg"
+                alt="twitter logo"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- end of email page -->
+
+        <!-- names and password page -->
+        <div class="container__panel2__slide">
+          <!-- back to names and password page -->
+          <button class="container__form-ui__button--back">BACK</button>
+
+          <!-- full name -->
+          <input
+            type="text"
+            name="full-name"
+            class="container__form-ui container__form-ui--input container__form-ui--fullname"
+            placeholder="Full name"
+            required
+          />
+
+          <!-- username -->
+          <input
+            type="text"
+            name="username"
+            class="container__form-ui container__form-ui--input container__form-ui--username"
+            placeholder="Username"
+            required
+          />
+
+          <!-- password -->
+          <input
+            type="password"
+            name="passwd"
+            class="container__form-ui container__form-ui--input container__form-ui--password"
+            placeholder="Password"
+            required
+          />
+
+          <!-- remember me checkbox -->
+          <div class="container__form-ui container__form-ui--chechdiv">
+            <input
+              type="checkbox"
+              name="remember-me"
+              value="remember-me"
+              checked
+              class="container__form-ui__check"
+              id="rem-me"
+            />
+
+            <label for="rem-me">Remember-me</label>
+          </div>
+
+          <!-- leads to date of birth page -->
+
+          <button class="container__form-ui__button--continue">CONTINUE</button>
+        </div>
+        <!-- end of names and password page -->
+
+        <!-- date of birth page -->
+        <div class="container__panel2__slide">
+          <!-- date of birth icon -->
+
+          <!-- back to names and password page -->
+          <button class="container__form-ui__button--back">BACK</button>
+
+          <span class="container__text">Date of birth</span>
+
+          <!-- displays values choosen as dob and number of years. -->
+          <input
+            type="text"
+            value="Jan 1,2022"
+            readonly
+            class="container__form-ui container__form-ui--input container__form-ui--dob-display"
+          />
+
+          <!-- date of birth picker -->
+
+          <input
+            type="date"
+            id="dob"
+            required
+            class="container__form-ui container__form-ui--input"
+          />
+
+          <!-- sign up button. -->
+          <input
+            type="button"
+            value="SIGN UP"
+            class="container__form-ui container__form-ui--input container__form-ui--submit"
+          />
+
+          <footer class="container__footer">
+            By continuing you have read,understood and agreed with our
+            <a href="#" class="container__link container__link--terms-privacy"
+              >Terms</a
+            >
+            and
+            <a href="#" class="container__link container__link--terms-privacy"
+              >Privacy policy</a
+            >
+          </footer>
+        </div>
+        <!-- end of date of birth page -->
+      </div>
+      <!-- end of sign up panel -->
     </div>
+    <!-- end of container -->
   </body>
 </html>

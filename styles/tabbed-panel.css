@@ -1,0 +1,19 @@
+/* normalize the links that point to panel */
+.container__main-tabs__tab > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* if active style the tab*/
+.container__main-tabs > .active {
+  background-color: #2e2e42;
+}
+
+/* make all non-active panel invisble */
+.container__panel.active {
+  display: block;
+}
+
+.container__panel {
+  display: none;
+}

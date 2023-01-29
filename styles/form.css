@@ -1,49 +1,92 @@
 /* Generic styles */
 .container__form-ui {
-    display: block;
-    height: 3.5rem;
-    margin-bottom: 10%;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
+  display: block;
+  height: 2.5rem;
+  margin-bottom: 15%;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 /* end of generic form styles */
 
-
-
 /* sign-in-and-up/sign-in.html styles*/
+.container__form-ui--chechdiv {
+  margin-bottom: 5%;
+}
 .container__form-ui--input {
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+  appearance: none;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 
-    text-indent: 3rem;
+  text-indent: 3rem;
 }
 
 .container__form-ui--username {
-    background-image: url("../sign-in-and-up/images/name/name1-30px.jpg");
-    background-repeat: no-repeat;
-    background-position: 1.0rem 0.6rem;
+  background-image: url("../sign-in-and-up/images/name/name1-30px.jpg");
+  background-repeat: no-repeat;
+  background-position: 0.5rem 0.2rem;
 }
 
 .container__form-ui--password {
-    background-image: url("../sign-in-and-up/images/password/password2-30px.jpg");
-    background-repeat: no-repeat;
-    background-position: 1.0rem 0.6rem;
+  background-image: url("../sign-in-and-up/images/password/password2-30px.jpg");
+  background-repeat: no-repeat;
+  background-position: 0.5rem 0.2rem;
 }
 
 .container__form-ui__check {
-    width: 1.2rem;
-    height: 1.2rem;
-    margin-right: 5%;
+  background-color: white;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 5%;
 }
 
 .container__form-ui--submit {
-    text-indent: 0rem; /* overides the text indent above */
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    width: 40%;
+  text-indent: 0rem; /* overides the text indent above */
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 40%;
+}
+
+.container__form-ui--email {
+  background-image: url("../sign-in-and-up/images/email/email1-30px.jpg");
+  background-repeat: no-repeat;
+  background-position: 0.5rem 0.2rem;
+  margin-bottom: 10%;
+}
+
+.container__form-ui--fullname {
+  background-image: url("../sign-in-and-up/images/email/email1-30px.jpg");
+  background-repeat: no-repeat;
+  background-position: 0.5rem 0.2rem;
+}
+
+.container__form-ui__button--next,
+.container__form-ui__button--continue {
+  display: block;
+  height: 2rem;
+  margin-bottom: 10%;
+  width: 35%;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: 800;
+}
+
+.container__form-ui__button--back {
+  display: block;
+  height: 1.5rem;
+  margin-bottom: 10%;
+  width: 20%;
+  margin-left: 5%;
+
+  font-weight: 800;
+  
+   border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 /* end of sign-in-and-up/sign-in.html styles*/
